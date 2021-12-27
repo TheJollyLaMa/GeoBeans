@@ -1,0 +1,28 @@
+<div class="bounties">
+    <br>
+    <div class="row">
+      <div class="col-xs-4">🍬🍬🍬</div>
+      <div class="col-xs-4 card">
+        <br>
+        {{title.bounties}}<br><hr>
+        Bounties are designed to utilize and expand the skillsets of community members to improve the codebase,
+          documentation, community outreach, or other activities deemed necessary for organizational improvement.
+      </div>
+      <div class="col-xs-4">🍬🍬🍬</div>
+    </div>
+    <br><hr><br>
+    <div class="row">
+      <div class="col" ng-repeat="bounty in bounties">
+        <div class="row quest_row" ng-click="open_qnb_popup()">
+          <div class="col-xs-4">{{bounty.name}}</div>
+          <div class="col-xs-4">
+            {{bounty.details.msg}}<br>
+            <a href="{{bounty.details.link}}">Link to Start</a>
+          </div>
+          <div class="col-xs-4">{{bounty.reward}}</div>
+        </div>
+      </div>
+    </div>
+
+
+</div>

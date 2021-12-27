@@ -1,0 +1,47 @@
+<div class="quests">
+    <br>
+    <button ng-click="showModal = !showModal" type="button" name="button" class="btn btn-primary">msg: {{showModal}}</button>
+       <!-- <div class="">
+          <h1>Modal example</h1>
+          <h1>{{showModal}}</h1>
+          <h1>{{msg}}</h1>
+          <button ng-click="open();" class="btn btn-primary">Test Modal</button>
+
+          <modal title="Login form" visible="showModal">
+            <form role="form">
+
+            </form>
+          </modal>
+        </div> -->
+
+    <div class="row">
+      <div class="col-xs-4">🍬🍬🍬</div>
+      <div class="col-xs-4 card">
+        <br>
+        {{title.quests}}<br><hr>
+        Quests are meant to reward members for their interest in educating themselves on DAO activity
+            and so must be designed to capture their learning inspiration for reasonable amounts of time
+            while offering a reward large enough to make the material worth learning.
+      </div>
+      <div class="col-xs-4">🍬🍬🍬</div>
+    </div>
+    <br><hr><br>
+    <div class="row">
+      <div class="col" ng-repeat="quest in quests">
+        <div class="row quest_row">
+          <div class="col-xs-4">{{quest.name}}</div>
+          <div class="col-xs-4">
+            {{quest.details.msg}}<br>
+            <a href="{{quest.details.link}}">Link to Start</a>
+          </div>
+          <div class="col-xs-4">{{quest.reward}}</div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+
+
+</div>
