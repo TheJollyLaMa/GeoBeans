@@ -9,7 +9,7 @@ app.factory('GeoBeanFactory', ['$http', function ($http) {
         FetchGeoBeanJSON: FetchGeoBeanJSON,
     }
     function FetchWeb3 () {
-      return "https://polygon-mainnet.infura.io/v3/3b8cd805fe4e409587dce8014566ffb0";
+      return "https://polygon-mainnet.infura.io/v3/";
     }
     /* Returns geo data from a google api on backend */
     function FetchCoord() {
